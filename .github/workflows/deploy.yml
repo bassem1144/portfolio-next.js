@@ -37,3 +37,4 @@ jobs:
           local-dir: ./my-portfolio-app/out/
           server-dir: ${{ secrets.FTP_SERVER_DIR }}
           protocol: ftps
+          timeout: 60000
