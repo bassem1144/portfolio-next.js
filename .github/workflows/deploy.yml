@@ -36,3 +36,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./my-portfolio-app/out/
           server-dir: ${{ secrets.FTP_SERVER_DIR }}
+          protocol: ftps
