@@ -2,10 +2,8 @@
 
 export default function About() {
   const highlights = [
-    { icon: '🎓', label: 'Education', value: 'HvA' },
     { icon: '💼', label: 'Internships', value: '2' },
-    { icon: '📚', label: 'Technologies', value: '15+' },
-    { icon: '🏆', label: 'Years Coding', value: '3+' },
+    { icon: '🏆', label: 'Years Coding', value: '4+' },
   ];
 
   return (
