@@ -8,7 +8,7 @@ export default function Projects() {
       gradient: 'from-[#6366f1] to-[#8b5cf6]',
       tags: ['Next.js', 'React', 'Tailwind CSS', 'Mailjet'],
       github: 'https://github.com/bassem1144/Hotel-booking-Next.js',
-      live: null,
+      live: 'https://hotel-booking-next-js.vercel.app/',
       featured: true
     },
     {
