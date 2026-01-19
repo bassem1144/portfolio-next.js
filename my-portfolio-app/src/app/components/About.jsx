@@ -1,9 +1,13 @@
 'use client';
 
+import Image from 'next/image';
+
 export default function About() {
   const highlights = [
+    { icon: '🎓', label: 'Education', value: 'HvA' },
     { icon: '💼', label: 'Internships', value: '2' },
     { icon: '🏆', label: 'Years Coding', value: '4+' },
+    { icon: '💻', label: 'Coding Languages', value: '5+' },
   ];
 
   return (
@@ -15,9 +19,14 @@ export default function About() {
             <div className="relative z-10">
               <div className="aspect-square rounded-2xl bg-gradient-to-br from-[#6366f1] via-[#22d3ee] to-[#f472b6] p-1">
                 <div className="w-full h-full rounded-2xl bg-[#0a0a0f] flex items-center justify-center overflow-hidden">
-                  <div className="w-full h-full bg-gradient-to-br from-[rgba(99,102,241,0.2)] to-[rgba(34,211,238,0.1)] flex items-center justify-center">
-                    <span className="text-8xl">👨‍💻</span>
-                  </div>
+                  <Image 
+                    src="/avatar.png"
+                    alt="Bassem Ismail - Software Developer"
+                    width={500}
+                    height={500}
+                    className="w-full h-full object-cover"
+                    priority
+                  />
                 </div>
               </div>
             </div>
@@ -41,18 +50,24 @@ export default function About() {
             </p>
 
             <p className="text-gray-400 leading-relaxed">
-              During my first year at HvA, I gained extensive experience with 
-              <span className="text-[#22d3ee]"> TypeScript</span>. After completing my propedeuse, 
+              During my first year at HvA, I gained hands-on experience with 
+              <span className="text-[#22d3ee]"> TypeScript</span>. After successfully completing my propedeuse, 
               I've been developing with <span className="text-[#6366f1]">Java and Spring Boot</span> for 
-              backend applications and <span className="text-[#f472b6]">Vue.js</span> for dynamic frontends. 
-              I build full-stack web applications with API integrations and database connections.
+              backend applications and <span className="text-[#f472b6]">Vue.js</span> for dynamic frontends, 
+              building full-stack web applications with API integrations and database connections.
             </p>
 
             <p className="text-gray-400 leading-relaxed">
-              Before HvA, I completed a Software Developer program at Bit Academy where I 
-              developed a strong foundation in <span className="text-[#6366f1]">PHP</span> and 
-              <span className="text-[#22d3ee]"> Laravel</span>. I work effectively in Scrum teams 
-              with sprints, stand-ups, and code reviews.
+              Before HvA, I completed a Software Developer study at Bit Academy, 
+              where I built a solid foundation in <span className="text-[#6366f1]">PHP</span> and 
+              <span className="text-[#22d3ee]"> Laravel</span>.
+            </p>
+
+            <p className="text-gray-400 leading-relaxed">
+              Through <span className="text-[#f472b6]">two internships</span> I've gained valuable 
+              professional experience working on real-world projects alongside experienced developers. 
+              I thrive in Agile environments, collaborating effectively in Scrum teams with sprints, 
+              stand-ups and code reviews.
             </p>
 
             {/* Highlights */}
@@ -65,20 +80,19 @@ export default function About() {
                 </div>
               ))}
             </div>
-
-            {/* Download Resume Button */}
-            <div className="mt-4">
-              <a 
-                href="#contact" 
-                className="btn-primary inline-flex items-center gap-2"
-              >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-                <span>Get In Touch</span>
-              </a>
-            </div>
           </div>
+        </div>
+              
+        <div className="mt-12 text-center">
+          <a 
+            href="#contact" 
+            className="btn-primary inline-flex items-center gap-2"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            <span>Get In Touch</span>
+          </a>
         </div>
       </div>
     </section>
