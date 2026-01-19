@@ -15,7 +15,7 @@ export default function Skills() {
     {
       title: 'Tools & Methods',
       icon: '🛠️',
-      skills: ['Git', 'Scrum', 'REST APIs', 'Laravel Nova', 'VS Code']
+      skills: ['Git', 'Scrum']
     },
     {
       title: 'Soft Skills',
@@ -70,17 +70,6 @@ export default function Skills() {
             </div>
           </div>
 
-          <div className="glass-card p-6">
-            <div className="flex items-center gap-4 justify-center mb-4">
-              <span className="text-2xl">📖</span>
-              <h3 className="text-lg font-semibold">Currently Learning</h3>
-            </div>
-            <div className="flex flex-wrap gap-3 justify-center">
-              <span className="skill-tag border-[#f472b6]">React</span>
-              <span className="skill-tag border-[#f472b6]">Docker</span>
-              <span className="skill-tag border-[#f472b6]">AWS</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>
